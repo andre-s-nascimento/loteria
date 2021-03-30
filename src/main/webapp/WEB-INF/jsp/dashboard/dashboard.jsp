@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -22,6 +23,7 @@ pageEncoding="UTF-8"%>
     <link href="css/sb-admin-2.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/print-dashboard.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body id="page-top">
@@ -42,7 +44,7 @@ pageEncoding="UTF-8"%>
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="<c:url value="dashboard"/>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -414,14 +416,14 @@ pageEncoding="UTF-8"%>
                         Deseja realmente sair?
                     </h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">Ã</span>
+                        <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">
                         Cancelar
                     </button>
-                    <a class="btn btn-primary" href="login.html">Sair</a>
+                    <a class="btn btn-primary" href="login">Sair</a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -10,6 +11,7 @@ pageEncoding="UTF-8"%>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
 
     <title>Jogo Loteria - Login</title>
 
@@ -21,6 +23,7 @@ pageEncoding="UTF-8"%>
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -53,11 +56,11 @@ pageEncoding="UTF-8"%>
                                             <input type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Senha">
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <a href="<c:url value="dashboard"/>" class="btn btn-primary btn-user btn-block">
                                             Login
                                         </a>
                                         <hr>
-                                        <a href="register.html" class="btn btn-google btn-user btn-block">
+                                        <a href="<c:url value="cadastrar"/>" class="btn btn-google btn-user btn-block">
                                             Cadastrar
                                         </a>
 
@@ -74,7 +77,7 @@ pageEncoding="UTF-8"%>
 
     </div>
 
-    <div class="d-flex justify-content-center">Usplash</div>
+    <div class="d-flex justify-content-center"><a href="https://www.freepik.com/vectors/business">Business vector created by freepik - www.freepik.com</a></div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
